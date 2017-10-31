@@ -1,19 +1,6 @@
 #!/bin/sh
 while [ 1 ]
 do
-   waitTime=$(shuf -i 1-5 -n 1)
-   sleep $waitTime &
-   wait $!
-   instruction=$(shuf -i 0-4 -n 1)
    d=`date`
-   case "$instruction" in
-      "1") echo "ERROR ($d) something happened in this execution."
-      ;;
-      "2") echo "INFO ($d) takes the value and converts it to string."
-      ;;
-      "3") echo "WARN ($d) variable not in use."
-      ;;
-      "4") echo "DEBUG ($d) first loop completed."
-      ;;
-   esac
+   echo "INFO ($d) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.."
 done

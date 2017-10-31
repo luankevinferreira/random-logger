@@ -2,18 +2,14 @@
 
 Docker image for a random log generator, based on Alpine Linux.
 
-[![](https://images.microbadger.com/badges/version/chentex/random-logger.svg)](https://microbadger.com/images/chentex/random-logger "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/chentex/random-logger.svg)](https://microbadger.com/images/chentex/random-logger "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/luankevinferreira/random-logger.svg)](https://microbadger.com/images/luankevinferreira/random-logger "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/luankevinferreira/random-logger.svg)](https://microbadger.com/images/luankevinferreira/random-logger "Get your own image badge on microbadger.com")
 
 ## What is this?
-This image will execute a container which will generate four random log messages:
-* `ERROR something happened in this execution.`
-* `INFO takes the value and converts it to string.`
-* `WARN varible not in use.`
-* `DEBUG first loop completed.`
+This image will execute a container which will generate a log message in an interrupt time to fill one or more files fast.
 
 ## Why this Image?
-I've had the necessity to create a random logger to test log configurations with containers, this helped me out to do it easily.
+I've had the necessity to create a lot of log to fill the file size and rotate to test log configurations with containers, this helped me out to do it easily.
 
 ## What is inside of this repo?
 In this git repository you will find the docker image definitions for the random Logger for Alpine Linux
@@ -26,10 +22,10 @@ To use this image you must do as follows:
 
 ```
 # you can use tags latest
-docker pull chentex/random-logger:latest
+docker pull luankevinferreira/random-logger:latest
 
 # to run the image just execute
-docker run -d chentex/random-logger:latest
+docker run -d luankevinferreira/random-logger:latest
 ```
 
 You will have now a docker container running and generating log messages, locate it running:
@@ -45,7 +41,7 @@ docker logs <- container-id ->
 ```
 
 ## How do I build this images?
-First things first, you can find these docker images in `chentex/random-logger`
+First things first, you can find these docker images in `luankevinferreira/random-logger`
 but you can also build a specific version on your own, you only need:
 
 - docker
@@ -53,7 +49,7 @@ but you can also build a specific version on your own, you only need:
 
 Clone this repo
 
-`git clone https://github.com/chentex/random-logger.git`
+`git clone https://github.com/luankevinferreira/random-logger.git`
 
 Go to the folder in your terminal and type this:
 
@@ -72,4 +68,4 @@ docker build -f Dockerfile -t yourbase/yourname:version .
 ---
 For more on docker build reference to the [Documentation](https://docs.docker.com/engine/reference/commandline/build/)
 
-You can get the source from the image in the [Repository](https://github.com/chentex/random-logger)
+You can get the source from the image in the [Repository](https://github.com/luankevinferreira/random-logger)
