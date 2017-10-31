@@ -6,7 +6,7 @@ Docker image for a random log generator, based on Alpine Linux.
 [![](https://images.microbadger.com/badges/image/luankevinferreira/random-logger.svg)](https://microbadger.com/images/luankevinferreira/random-logger "Get your own image badge on microbadger.com")
 
 ## What is this?
-This image will execute a container which will generate a log message in an interrupt time to fill one or more files fast.
+This image will execute a container which will generate a log message in an uninterrupted time to fill one or more files fast.
 
 ## Why this Image?
 I've had the necessity to create a lot of log to fill the file size and rotate to test log configurations with containers, this helped me out to do it easily.
