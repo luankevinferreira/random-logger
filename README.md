@@ -56,7 +56,12 @@ docker build -f Dockerfile .
 If you want to tag your image use the following command
 
 ```
-docker build -f Dockerfile -t yourbase/yourname:version .
+docker build -f Dockerfile -t yourbase/yourname .
+```
+
+If you want to push to your registry use the following command
+```
+docker push yourbase/yourname
 ```
 ---
 For more on docker build reference to the [Documentation](https://docs.docker.com/engine/reference/commandline/build/)
